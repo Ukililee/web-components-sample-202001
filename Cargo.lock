@@ -35,3 +35,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "78d1833b3838dbe990df0f1f87baf640cf6146e898166afe401839d1b001e570"
 dependencies = [
  "bitflags",
+ "bytes 0.5.6",
+ "futures-core",
+ "futures-sink",
+ "log",
+ "pin-project 0.4.28",
+ "tokio",
+ "tokio-util",
+]
+
+[[package]]
+name = "actix-connect"
+version = "2.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "177837a10863f15ba8d3ae3ec12fac1099099529ed20083a27fdfe247381d0dc"
+dependencies = [
+ "actix-codec",
+ "actix-rt",
+ "actix-service",

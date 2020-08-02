@@ -94,3 +94,22 @@ dependencies = [
  "httparse",
  "indexmap",
  "itoa",
+ "language-tags",
+ "lazy_static",
+ "log",
+ "mime",
+ "percent-encoding",
+ "pin-project 1.0.8",
+ "rand",
+ "regex",
+ "serde",
+ "serde_json",
+ "serde_urlencoded",
+ "sha-1",
+ "slab",
+ "time",
+]
+
+[[package]]
+name = "actix-macros"
+version = "0.1.3"

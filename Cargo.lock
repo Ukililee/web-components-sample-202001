@@ -16,3 +16,22 @@ dependencies = [
  "crossbeam-channel",
  "derive_more",
  "futures-channel",
+ "futures-util",
+ "log",
+ "once_cell",
+ "parking_lot",
+ "pin-project 0.4.28",
+ "smallvec",
+ "tokio",
+ "tokio-util",
+ "trust-dns-proto",
+ "trust-dns-resolver",
+]
+
+[[package]]
+name = "actix-codec"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "78d1833b3838dbe990df0f1f87baf640cf6146e898166afe401839d1b001e570"
+dependencies = [
+ "bitflags",

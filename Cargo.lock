@@ -167,3 +167,16 @@ dependencies = [
  "slab",
  "socket2",
 ]
+
+[[package]]
+name = "actix-service"
+version = "1.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0052435d581b5be835d11f4eb3bce417c8af18d87ddf8ace99f8e67e595882bb"
+dependencies = [
+ "futures-util",
+ "pin-project 0.4.28",
+]
+
+[[package]]
+name = "actix-testing"

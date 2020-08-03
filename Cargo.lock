@@ -144,3 +144,26 @@ dependencies = [
  "copyless",
  "futures-channel",
  "futures-util",
+ "smallvec",
+ "tokio",
+]
+
+[[package]]
+name = "actix-server"
+version = "1.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "45407e6e672ca24784baa667c5d32ef109ccdd8d5e0b5ebb9ef8a67f4dfb708e"
+dependencies = [
+ "actix-codec",
+ "actix-rt",
+ "actix-service",
+ "actix-utils",
+ "futures-channel",
+ "futures-util",
+ "log",
+ "mio",
+ "mio-uds",
+ "num_cpus",
+ "slab",
+ "socket2",
+]

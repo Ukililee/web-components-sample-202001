@@ -266,3 +266,17 @@ dependencies = [
  "futures-util",
  "fxhash",
  "log",
+ "mime",
+ "pin-project 1.0.8",
+ "regex",
+ "serde",
+ "serde_json",
+ "serde_urlencoded",
+ "socket2",
+ "time",
+ "tinyvec",
+ "url",
+]
+
+[[package]]
+name = "actix-web-actors"

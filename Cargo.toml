@@ -1,3 +1,5 @@
 [workspace]
 members = [
-  "st
+  "stock",
+  "api",
+]

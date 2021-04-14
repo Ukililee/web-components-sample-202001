@@ -1,4 +1,4 @@
 use actix::{Actor, ActorContext, Addr, AsyncContext, Handler, Running, StreamHandler};
 use actix_web_actors::ws;
 
-use crate::messages::{Connected, SendClientMessage, Up
+use crate::messages::{Connected, SendClientMessage, UpdateUserSubscri

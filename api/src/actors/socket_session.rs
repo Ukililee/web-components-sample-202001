@@ -3,4 +3,4 @@ use actix_web_actors::ws;
 
 use crate::messages::{Connected, SendClientMessage, UpdateUserSubscriptions};
 
-use super
+use super::user_store::Us

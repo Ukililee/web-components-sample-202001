@@ -5,4 +5,4 @@ use crate::messages::{Connected, SendClientMessage, UpdateUserSubscriptions};
 
 use super::user_store::UserStore;
 
-/// Actor for handling Web
+/// Actor for handling Websocket Connectio

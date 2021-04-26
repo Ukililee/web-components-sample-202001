@@ -6,4 +6,4 @@ use crate::messages::{Connected, SendClientMessage, UpdateUserSubscriptions};
 use super::user_store::UserStore;
 
 /// Actor for handling Websocket Connection,
-/// created on ea
+/// created on each User connec

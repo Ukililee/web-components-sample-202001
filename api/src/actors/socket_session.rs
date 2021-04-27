@@ -7,4 +7,5 @@ use super::user_store::UserStore;
 
 /// Actor for handling Websocket Connection,
 /// created on each User connection
-/// holds the clone ref of UserStore A
+/// holds the clone ref of UserStore Actor
+pub(crate)

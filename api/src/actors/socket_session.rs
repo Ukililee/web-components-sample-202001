@@ -9,4 +9,4 @@ use super::user_store::UserStore;
 /// created on each User connection
 /// holds the clone ref of UserStore Actor
 pub(crate) struct SocketSession {
-  
+    pub addr: Addr<

@@ -12,3 +12,5 @@ pub(crate) struct SocketSession {
     pub addr: Addr<UserStore>,
     pub user_id: usize,
 }
+
+impl Actor 

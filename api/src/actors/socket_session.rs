@@ -10,4 +10,5 @@ use super::user_store::UserStore;
 /// holds the clone ref of UserStore Actor
 pub(crate) struct SocketSession {
     pub addr: Addr<UserStore>,
-    pub user
+    pub user_id: usize,
+}

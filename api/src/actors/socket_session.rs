@@ -14,4 +14,4 @@ pub(crate) struct SocketSession {
 }
 
 impl Actor for SocketSession {
-    ty
+    type Context = ws::Websocke

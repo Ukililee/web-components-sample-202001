@@ -17,4 +17,4 @@ impl Actor for SocketSession {
     type Context = ws::WebsocketContext<Self>;
 
     /// on new connection established,
-    /// send the id and the 
+    /// send the id and the Addr of this socke

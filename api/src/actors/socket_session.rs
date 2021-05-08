@@ -19,4 +19,4 @@ impl Actor for SocketSession {
     /// on new connection established,
     /// send the id and the Addr of this socket to UserStore
     fn started(&mut self, ctx: &mut Self::Context) {
-    
+        let addr 

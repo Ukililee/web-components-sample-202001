@@ -22,4 +22,4 @@ impl Actor for SocketSession {
         let addr = ctx.address();
         self.addr.do_send(Connected {
             addr: addr.clone(),
-     
+            user_id: sel

@@ -21,4 +21,4 @@ impl Actor for SocketSession {
     fn started(&mut self, ctx: &mut Self::Context) {
         let addr = ctx.address();
         self.addr.do_send(Connected {
-     
+            addr: ad

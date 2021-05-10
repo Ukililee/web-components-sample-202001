@@ -20,4 +20,5 @@ impl Actor for SocketSession {
     /// send the id and the Addr of this socket to UserStore
     fn started(&mut self, ctx: &mut Self::Context) {
         let addr = ctx.address();
-        self.addr.do_send(Co
+        self.addr.do_send(Connected {
+     

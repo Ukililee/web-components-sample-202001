@@ -23,4 +23,7 @@ impl Actor for SocketSession {
         self.addr.do_send(Connected {
             addr: addr.clone(),
             user_id: self.user_id,
-    
+        });
+    }
+
+   

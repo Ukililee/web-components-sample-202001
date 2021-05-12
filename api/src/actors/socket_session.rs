@@ -26,4 +26,4 @@ impl Actor for SocketSession {
         });
     }
 
-    fn stopping(&mu
+    fn stopping(&mut self, _: &mut 

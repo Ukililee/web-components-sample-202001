@@ -28,3 +28,7 @@ impl Actor for SocketSession {
 
     fn stopping(&mut self, _: &mut Self::Context) -> Running {
         Running::Stop
+    }
+}
+
+impl 

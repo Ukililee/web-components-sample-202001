@@ -31,4 +31,4 @@ impl Actor for SocketSession {
     }
 }
 
-impl 
+impl Handler<SendClient

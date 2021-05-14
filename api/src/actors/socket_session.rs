@@ -31,4 +31,5 @@ impl Actor for SocketSession {
     }
 }
 
-impl Handler<SendClientMessage> 
+impl Handler<SendClientMessage> for SocketSession {
+  

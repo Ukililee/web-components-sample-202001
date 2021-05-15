@@ -34,4 +34,4 @@ impl Actor for SocketSession {
 impl Handler<SendClientMessage> for SocketSession {
     type Result = ();
 
-    /// Receive messages from UserStore an
+    /// Receive messages from UserStore and forward th

@@ -35,4 +35,4 @@ impl Handler<SendClientMessage> for SocketSession {
     type Result = ();
 
     /// Receive messages from UserStore and forward them to the Client
-   
+    fn handle(&mut sel

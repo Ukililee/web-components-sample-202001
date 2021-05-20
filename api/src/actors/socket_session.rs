@@ -40,4 +40,5 @@ impl Handler<SendClientMessage> for SocketSession {
     }
 }
 
-/// WebSocket message handle
+/// WebSocket message handler
+impl StreamHandler<Re

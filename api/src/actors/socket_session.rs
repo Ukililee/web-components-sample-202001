@@ -40,4 +40,4 @@ impl Handler<SendClientMessage> for SocketSession {
     }
 }
 
-/// WebSoc
+/// WebSocket message handle

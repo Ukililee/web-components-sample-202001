@@ -37,4 +37,7 @@ impl Handler<SendClientMessage> for SocketSession {
     /// Receive messages from UserStore and forward them to the Client
     fn handle(&mut self, msg: SendClientMessage, ctx: &mut Self::Context) {
         ctx.text(msg.message);
-   
+    }
+}
+
+/// WebSoc

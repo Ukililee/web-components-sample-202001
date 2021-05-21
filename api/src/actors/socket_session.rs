@@ -41,4 +41,4 @@ impl Handler<SendClientMessage> for SocketSession {
 }
 
 /// WebSocket message handler
-impl StreamHandler<Result<ws::Me
+impl StreamHandler<Result<ws::Message, ws::ProtocolErr

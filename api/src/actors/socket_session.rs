@@ -44,4 +44,5 @@ impl Handler<SendClientMessage> for SocketSession {
 impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
     fn handle(&mut self, msg: Result<ws::Message, ws::ProtocolError>, ctx: &mut Self::Context) {
         let msg = match msg {
-            Err(_) =>
+            Err(_) => {
+              

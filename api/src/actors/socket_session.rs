@@ -46,4 +46,6 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
         let msg = match msg {
             Err(_) => {
                 ctx.stop();
-                r
+                return;
+            }
+ 

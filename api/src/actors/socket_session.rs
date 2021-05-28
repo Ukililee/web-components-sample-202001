@@ -48,4 +48,5 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                 ctx.stop();
                 return;
             }
-            Ok(
+            Ok(msg) => msg,
+    

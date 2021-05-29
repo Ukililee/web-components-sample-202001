@@ -52,4 +52,5 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
         };
 
         match msg {
-            ws::Message::Text(te
+            ws::Message::Text(text) => {
+          

@@ -55,4 +55,4 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
             ws::Message::Text(text) => {
                 let m = text.trim();
                 if m.starts_with('/') {
-                    let v: Vec<&str> =
+                    let v: Vec<&str> = m.splitn(2, ' ').co

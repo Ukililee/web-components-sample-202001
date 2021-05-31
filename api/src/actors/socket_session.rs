@@ -54,4 +54,5 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
         match msg {
             ws::Message::Text(text) => {
                 let m = text.trim();
-                if m.starts_with('/') 
+                if m.starts_with('/') {
+                    let

@@ -57,3 +57,4 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                 if m.starts_with('/') {
                     let v: Vec<&str> = m.splitn(2, ' ').collect();
                     if v[0] == "/subscribe" {
+              

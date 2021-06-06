@@ -58,4 +58,4 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                     let v: Vec<&str> = m.splitn(2, ' ').collect();
                     if v[0] == "/subscribe" {
                         if !v[1].is_empty() {
-                            let subscriptions = v[1].split(",").map(|v| v.trim().into(
+                            let subscriptions = v[1].split(",").map(|v| v.trim().into()).collect();

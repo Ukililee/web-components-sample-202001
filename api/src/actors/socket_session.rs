@@ -60,4 +60,4 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                         if !v[1].is_empty() {
                             let subscriptions = v[1].split(",").map(|v| v.trim().into()).collect();
 
-                            self.addr.do_send(UpdateUs
+                            self.addr.do_send(UpdateUserSubscriptions {

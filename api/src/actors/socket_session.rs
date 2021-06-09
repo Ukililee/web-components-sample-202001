@@ -61,4 +61,5 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                             let subscriptions = v[1].split(",").map(|v| v.trim().into()).collect();
 
                             self.addr.do_send(UpdateUserSubscriptions {
-                             
+                                subscriptions,
+  

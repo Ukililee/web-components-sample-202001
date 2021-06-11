@@ -64,4 +64,5 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                                 subscriptions,
                                 user_id: self.user_id,
                             });
-                   
+                        }
+        

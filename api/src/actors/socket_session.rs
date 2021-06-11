@@ -63,4 +63,5 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                             self.addr.do_send(UpdateUserSubscriptions {
                                 subscriptions,
                                 user_id: self.user_id,
-                   
+                            });
+ 

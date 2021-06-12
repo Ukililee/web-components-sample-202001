@@ -65,4 +65,4 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                                 user_id: self.user_id,
                             });
                         }
-        
+                    }

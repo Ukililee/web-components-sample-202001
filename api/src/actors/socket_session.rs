@@ -69,4 +69,4 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
                 }
             }
             ws::Message::Close(reason) => {
-                c
+                ctx.close(reaso

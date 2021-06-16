@@ -74,4 +74,5 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for SocketSession {
             }
             _ => (),
         }
-   
+    }
+}

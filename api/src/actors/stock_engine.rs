@@ -3,4 +3,5 @@ use actix::{
     clock::{interval_at, Instant},
     Actor, Addr, Context,
 };
-use futures
+use futures::StreamExt;
+us

@@ -6,4 +6,6 @@ use actix::{
 use futures::StreamExt;
 use std::time::Duration;
 
-use super::user_store:
+use super::user_store::UserStore;
+
+cons

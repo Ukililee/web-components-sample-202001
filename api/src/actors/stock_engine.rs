@@ -8,4 +8,4 @@ use std::time::Duration;
 
 use super::user_store::UserStore;
 
-cons
+const TICK_INT

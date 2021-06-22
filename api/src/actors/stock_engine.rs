@@ -8,4 +8,4 @@ use std::time::Duration;
 
 use super::user_store::UserStore;
 
-const TICK_INT
+const TICK_INTERVAL: u64 = 1

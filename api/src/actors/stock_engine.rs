@@ -8,4 +8,6 @@ use std::time::Duration;
 
 use super::user_store::UserStore;
 
-const TICK_INTERVAL: u64 = 1
+const TICK_INTERVAL: u64 = 1;
+
+/// Stock Engine

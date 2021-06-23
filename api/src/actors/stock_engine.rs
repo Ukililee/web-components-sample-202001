@@ -11,4 +11,4 @@ use super::user_store::UserStore;
 const TICK_INTERVAL: u64 = 1;
 
 /// Stock Engine
-/// engine that generates tic
+/// engine that generates ticks and informs User

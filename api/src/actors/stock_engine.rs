@@ -12,4 +12,4 @@ const TICK_INTERVAL: u64 = 1;
 
 /// Stock Engine
 /// engine that generates ticks and informs UserStore of Stock Updates
-/// this engine is the only place from
+/// this engine is the only place from where we are updat

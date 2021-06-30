@@ -15,4 +15,7 @@ const TICK_INTERVAL: u64 = 1;
 /// this engine is the only place from where we are updating the AppState's stock data
 pub(crate) struct StockEngine {
     pub stock_data_sink: StockDataSink,
-    pub user_store: Addr<UserS
+    pub user_store: Addr<UserStore>,
+}
+
+impl Ac

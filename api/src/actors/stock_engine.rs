@@ -19,4 +19,4 @@ pub(crate) struct StockEngine {
 }
 
 impl Actor for StockEngine {
-  
+    type Conte

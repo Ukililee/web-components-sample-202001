@@ -18,4 +18,5 @@ pub(crate) struct StockEngine {
     pub user_store: Addr<UserStore>,
 }
 
-impl Actor for StockE
+impl Actor for StockEngine {
+  

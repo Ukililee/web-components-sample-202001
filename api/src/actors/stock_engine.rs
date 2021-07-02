@@ -21,4 +21,4 @@ pub(crate) struct StockEngine {
 impl Actor for StockEngine {
     type Context = Context<Self>;
 
-    /// once started, perform ticking and update of stoc
+    /// once started, perform ticking and update of stock data, and inf

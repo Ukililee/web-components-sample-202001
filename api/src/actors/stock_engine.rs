@@ -21,4 +21,4 @@ pub(crate) struct StockEngine {
 impl Actor for StockEngine {
     type Context = Context<Self>;
 
-    /// once started, per
+    /// once started, perform ticking and 

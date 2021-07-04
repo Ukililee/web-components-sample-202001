@@ -22,4 +22,4 @@ impl Actor for StockEngine {
     type Context = Context<Self>;
 
     /// once started, perform ticking and update of stock data, and inform UserStore
-    fn started(&mut se
+    fn started(&mut self, _ctx: &mut 

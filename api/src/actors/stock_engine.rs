@@ -24,4 +24,4 @@ impl Actor for StockEngine {
     /// once started, perform ticking and update of stock data, and inform UserStore
     fn started(&mut self, _ctx: &mut Self::Context) {
         let stock_data = self.stock_data_sink.clone();
-        let user_store = 
+        let user_store = self.user_s

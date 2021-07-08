@@ -25,4 +25,4 @@ impl Actor for StockEngine {
     fn started(&mut self, _ctx: &mut Self::Context) {
         let stock_data = self.stock_data_sink.clone();
         let user_store = self.user_store.clone();
-        let mut thre
+        let mut thread_rng = rand::thr

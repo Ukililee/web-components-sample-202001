@@ -27,4 +27,5 @@ impl Actor for StockEngine {
         let user_store = self.user_store.clone();
         let mut thread_rng = rand::thread_rng();
 
-        actix_web::rt::spawn(a
+        actix_web::rt::spawn(async move {
+    

@@ -28,4 +28,4 @@ impl Actor for StockEngine {
         let mut thread_rng = rand::thread_rng();
 
         actix_web::rt::spawn(async move {
-            let mut task
+            let mut task = interval_at(Instan

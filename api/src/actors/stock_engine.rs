@@ -30,4 +30,5 @@ impl Actor for StockEngine {
         actix_web::rt::spawn(async move {
             let mut task = interval_at(Instant::now(), Duration::from_secs(TICK_INTERVAL));
 
-            while task.next(
+            while task.next().await.is_some() {
+  

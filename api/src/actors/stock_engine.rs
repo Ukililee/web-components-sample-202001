@@ -32,3 +32,4 @@ impl Actor for StockEngine {
 
             while task.next().await.is_some() {
                 stock_data
+                  

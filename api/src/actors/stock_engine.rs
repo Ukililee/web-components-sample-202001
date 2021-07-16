@@ -31,4 +31,4 @@ impl Actor for StockEngine {
             let mut task = interval_at(Instant::now(), Duration::from_secs(TICK_INTERVAL));
 
             while task.next().await.is_some() {
-              
+                stock_data

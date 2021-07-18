@@ -34,4 +34,4 @@ impl Actor for StockEngine {
                 stock_data
                     .write()
                     .unwrap()
-                    .genera
+                    .generate_next_tick(&

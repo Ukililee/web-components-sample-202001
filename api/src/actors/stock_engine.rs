@@ -35,4 +35,5 @@ impl Actor for StockEngine {
                     .write()
                     .unwrap()
                     .generate_next_tick(&mut thread_rng);
-                user_store.do_send(StockUpdate
+                user_store.do_send(StockUpdated {});
+    

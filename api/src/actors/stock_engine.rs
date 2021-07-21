@@ -38,4 +38,5 @@ impl Actor for StockEngine {
                 user_store.do_send(StockUpdated {});
             }
         });
-   
+    }
+}

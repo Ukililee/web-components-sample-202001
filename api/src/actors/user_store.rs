@@ -3,4 +3,4 @@ use std::collections::HashMap;
 use actix::{Actor, Addr, Context, Handler};
 
 use crate::{
-    messages::{Connected, SendClientMessage, StockUpdated, UpdateU
+    messages::{Connected, SendClientMessage, StockUpdated, UpdateUserSubscriptions},

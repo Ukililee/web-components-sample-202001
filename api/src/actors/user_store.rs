@@ -9,4 +9,4 @@ use crate::{
 
 use super::socket_session::SocketSession;
 
-const US
+const USER_CREDITS: u32

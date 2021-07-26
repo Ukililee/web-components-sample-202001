@@ -9,4 +9,6 @@ use crate::{
 
 use super::socket_session::SocketSession;
 
-const USER_CREDITS: u32
+const USER_CREDITS: u32 = 1024;
+
+/// U

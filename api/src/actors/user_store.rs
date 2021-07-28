@@ -12,4 +12,4 @@ use super::socket_session::SocketSession;
 const USER_CREDITS: u32 = 1024;
 
 /// UserStore
-/// where we store newly creat
+/// where we store newly created Users and 

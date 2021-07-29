@@ -13,4 +13,4 @@ const USER_CREDITS: u32 = 1024;
 
 /// UserStore
 /// where we store newly created Users and their info
-/// the only place from where
+/// the only place from where we update Users

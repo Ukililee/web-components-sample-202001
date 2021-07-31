@@ -15,4 +15,5 @@ const USER_CREDITS: u32 = 1024;
 /// where we store newly created Users and their info
 /// the only place from where we update Users
 pub(crate) struct UserStore {
-    pub users: HashMap<usize, User>
+    pub users: HashMap<usize, User>,
+    pub stock_data

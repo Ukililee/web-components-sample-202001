@@ -16,4 +16,7 @@ const USER_CREDITS: u32 = 1024;
 /// the only place from where we update Users
 pub(crate) struct UserStore {
     pub users: HashMap<usize, User>,
-    pub stock_data_sink: StockDataS
+    pub stock_data_sink: StockDataSink,
+}
+
+impl Actor for U

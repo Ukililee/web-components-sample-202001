@@ -19,4 +19,5 @@ pub(crate) struct UserStore {
     pub stock_data_sink: StockDataSink,
 }
 
-impl Actor for U
+impl Actor for UserStore {
+    type 

@@ -20,4 +20,4 @@ pub(crate) struct UserStore {
 }
 
 impl Actor for UserStore {
-    type 
+    type Context = Cont

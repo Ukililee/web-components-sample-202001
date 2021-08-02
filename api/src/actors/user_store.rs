@@ -20,4 +20,7 @@ pub(crate) struct UserStore {
 }
 
 impl Actor for UserStore {
-    type Context = Cont
+    type Context = Context<Self>;
+}
+
+imp

@@ -23,4 +23,4 @@ impl Actor for UserStore {
     type Context = Context<Self>;
 }
 
-impl Handler<St
+impl Handler<StockUpdated> for U

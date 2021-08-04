@@ -26,4 +26,4 @@ impl Actor for UserStore {
 impl Handler<StockUpdated> for UserStore {
     type Result = ();
 
-    /// on stock u
+    /// on stock updates - iterate

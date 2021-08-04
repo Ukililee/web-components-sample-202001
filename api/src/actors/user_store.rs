@@ -24,4 +24,4 @@ impl Actor for UserStore {
 }
 
 impl Handler<StockUpdated> for UserStore {
-    type
+    type Result 

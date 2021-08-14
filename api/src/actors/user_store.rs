@@ -28,4 +28,4 @@ impl Handler<StockUpdated> for UserStore {
 
     /// on stock updates - iterate over all users and send them their subscribed prices
     /// also performs crediting the users
-    fn han
+    fn handle(&mut s

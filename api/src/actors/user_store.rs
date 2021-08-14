@@ -27,4 +27,5 @@ impl Handler<StockUpdated> for UserStore {
     type Result = ();
 
     /// on stock updates - iterate over all users and send them their subscribed prices
-    /// also performs crediting t
+    /// also performs crediting the users
+    fn han

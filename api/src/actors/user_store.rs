@@ -28,4 +28,5 @@ impl Handler<StockUpdated> for UserStore {
 
     /// on stock updates - iterate over all users and send them their subscribed prices
     /// also performs crediting the users
-    fn handle(&mut self, _msg: StockUpdated, _ctx: &mut Self::Context) -> Self
+    fn handle(&mut self, _msg: StockUpdated, _ctx: &mut Self::Context) -> Self::Result {
+    

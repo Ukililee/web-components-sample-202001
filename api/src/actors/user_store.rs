@@ -31,4 +31,4 @@ impl Handler<StockUpdated> for UserStore {
     fn handle(&mut self, _msg: StockUpdated, _ctx: &mut Self::Context) -> Self::Result {
         let stock_data = self.stock_data_sink.read().unwrap();
 
-        for (_, us
+        for (_, user) in &mut self

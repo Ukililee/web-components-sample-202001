@@ -32,4 +32,6 @@ impl Handler<StockUpdated> for UserStore {
         let stock_data = self.stock_data_sink.read().unwrap();
 
         for (_, user) in &mut self.users {
-            let subs = user.subscriptions.len
+            let subs = user.subscriptions.len() as u32;
+
+          

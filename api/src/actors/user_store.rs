@@ -34,4 +34,5 @@ impl Handler<StockUpdated> for UserStore {
         for (_, user) in &mut self.users {
             let subs = user.subscriptions.len() as u32;
 
-            if subs > 0 && user.credits > 0 && user.credits >= sub
+            if subs > 0 && user.credits > 0 && user.credits >= subs {
+                l

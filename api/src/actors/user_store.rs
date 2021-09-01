@@ -35,4 +35,5 @@ impl Handler<StockUpdated> for UserStore {
             let subs = user.subscriptions.len() as u32;
 
             if subs > 0 && user.credits > 0 && user.credits >= subs {
-                l
+                let response = user
+ 

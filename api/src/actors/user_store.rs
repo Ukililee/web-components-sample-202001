@@ -36,4 +36,5 @@ impl Handler<StockUpdated> for UserStore {
 
             if subs > 0 && user.credits > 0 && user.credits >= subs {
                 let response = user
-                  
+                    .subscriptions
+      

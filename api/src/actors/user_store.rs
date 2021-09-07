@@ -38,4 +38,4 @@ impl Handler<StockUpdated> for UserStore {
                 let response = user
                     .subscriptions
                     .iter()
-                  
+                    .filter(|stoc

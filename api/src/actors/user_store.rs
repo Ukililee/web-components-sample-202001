@@ -38,4 +38,5 @@ impl Handler<StockUpdated> for UserStore {
                 let response = user
                     .subscriptions
                     .iter()
-                    .filter(|stock| stock_data.get_last_price(stock).is_some(
+                    .filter(|stock| stock_data.get_last_price(stock).is_some())
+               

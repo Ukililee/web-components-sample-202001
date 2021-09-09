@@ -39,4 +39,4 @@ impl Handler<StockUpdated> for UserStore {
                     .subscriptions
                     .iter()
                     .filter(|stock| stock_data.get_last_price(stock).is_some())
-               
+                    .map(|stock| {

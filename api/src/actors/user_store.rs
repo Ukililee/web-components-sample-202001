@@ -40,4 +40,4 @@ impl Handler<StockUpdated> for UserStore {
                     .iter()
                     .filter(|stock| stock_data.get_last_price(stock).is_some())
                     .map(|stock| {
-         
+                        forma

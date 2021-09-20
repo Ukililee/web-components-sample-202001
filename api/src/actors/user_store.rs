@@ -43,4 +43,4 @@ impl Handler<StockUpdated> for UserStore {
                         format!("{}: {}", stock, stock_data.get_last_price(stock).unwrap())
                     })
                     .collect::<Vec<String>>()
-      
+                    .

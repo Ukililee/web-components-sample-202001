@@ -42,4 +42,4 @@ impl Handler<StockUpdated> for UserStore {
                     .map(|stock| {
                         format!("{}: {}", stock, stock_data.get_last_price(stock).unwrap())
                     })
-                    .c
+                    .collect::<Vec<String>>(

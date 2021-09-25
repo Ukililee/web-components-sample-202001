@@ -45,4 +45,5 @@ impl Handler<StockUpdated> for UserStore {
                     .collect::<Vec<String>>()
                     .join(",");
 
-                if !response.
+                if !response.is_empty() {
+ 

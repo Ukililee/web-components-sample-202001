@@ -46,4 +46,4 @@ impl Handler<StockUpdated> for UserStore {
                     .join(",");
 
                 if !response.is_empty() {
-                    user.addr.do_send(SendClientMessage { messa
+                    user.addr.do_send(SendClientMessage { message: response }

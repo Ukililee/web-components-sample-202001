@@ -47,4 +47,4 @@ impl Handler<StockUpdated> for UserStore {
 
                 if !response.is_empty() {
                     user.addr.do_send(SendClientMessage { message: response });
-                    user.credits = u
+                    user.credits = user.cred

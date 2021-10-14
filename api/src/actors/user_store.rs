@@ -49,4 +49,5 @@ impl Handler<StockUpdated> for UserStore {
                     user.addr.do_send(SendClientMessage { message: response });
                     user.credits = user.credits - subs;
                 }
-     
+            }
+ 

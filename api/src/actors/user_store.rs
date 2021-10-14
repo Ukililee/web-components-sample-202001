@@ -50,4 +50,6 @@ impl Handler<StockUpdated> for UserStore {
                     user.credits = user.credits - subs;
                 }
             }
- 
+        }
+    }
+}

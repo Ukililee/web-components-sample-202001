@@ -54,4 +54,4 @@ impl Handler<StockUpdated> for UserStore {
     }
 }
 
-impl Handler<UpdateUse
+impl Handler<UpdateUserSubscriptions>

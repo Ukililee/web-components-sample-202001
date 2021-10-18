@@ -57,4 +57,4 @@ impl Handler<StockUpdated> for UserStore {
 impl Handler<UpdateUserSubscriptions> for UserStore {
     type Result = ();
 
-    /// handles 
+    /// handles users subscriptions that 

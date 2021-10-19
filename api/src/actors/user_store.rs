@@ -57,4 +57,5 @@ impl Handler<StockUpdated> for UserStore {
 impl Handler<UpdateUserSubscriptions> for UserStore {
     type Result = ();
 
-    /// handles users subscriptions that are coming via w
+    /// handles users subscriptions that are coming via websocket
+    fn

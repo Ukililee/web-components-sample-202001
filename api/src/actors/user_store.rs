@@ -58,4 +58,5 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
     type Result = ();
 
     /// handles users subscriptions that are coming via websocket
-    fn handle(&mut self, msg: UpdateUserSubscriptions, _ctx: &mut Self::Context) -> Self::Res
+    fn handle(&mut self, msg: UpdateUserSubscriptions, _ctx: &mut Self::Context) -> Self::Result {
+        l

@@ -60,4 +60,5 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
     /// handles users subscriptions that are coming via websocket
     fn handle(&mut self, msg: UpdateUserSubscriptions, _ctx: &mut Self::Context) -> Self::Result {
         let user = self.users.get_mut(&msg.user_id);
-        if user.
+        if user.is_some() {
+    

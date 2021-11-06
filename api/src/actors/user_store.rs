@@ -62,4 +62,4 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
         let user = self.users.get_mut(&msg.user_id);
         if user.is_some() {
             let user = user.unwrap();
-          
+            for stock

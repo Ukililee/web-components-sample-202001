@@ -61,4 +61,5 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
     fn handle(&mut self, msg: UpdateUserSubscriptions, _ctx: &mut Self::Context) -> Self::Result {
         let user = self.users.get_mut(&msg.user_id);
         if user.is_some() {
-            let user = 
+            let user = user.unwrap();
+          

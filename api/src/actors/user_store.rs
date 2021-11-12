@@ -64,3 +64,6 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
             let user = user.unwrap();
             for stock in msg.subscriptions {
                 user.subscriptions.push(stock);
+            }
+        }
+ 

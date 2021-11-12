@@ -66,4 +66,7 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
                 user.subscriptions.push(stock);
             }
         }
- 
+    }
+}
+
+impl Ha

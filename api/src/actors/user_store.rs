@@ -69,4 +69,4 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
     }
 }
 
-impl Ha
+impl Handler<Connect

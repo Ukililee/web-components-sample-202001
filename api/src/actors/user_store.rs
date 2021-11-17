@@ -70,4 +70,6 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
 }
 
 impl Handler<Connected> for UserStore {
-    type Re
+    type Result = ();
+
+    

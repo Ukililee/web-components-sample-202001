@@ -72,4 +72,4 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
 impl Handler<Connected> for UserStore {
     type Result = ();
 
-    
+    /// creates new Use

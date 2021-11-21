@@ -72,4 +72,5 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
 impl Handler<Connected> for UserStore {
     type Result = ();
 
-    /// creates new User struct with info from the SocketSession (user_id, Addr<SocketSe
+    /// creates new User struct with info from the SocketSession (user_id, Addr<SocketSession>)
+    fn handl

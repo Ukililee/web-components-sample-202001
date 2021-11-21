@@ -72,4 +72,4 @@ impl Handler<UpdateUserSubscriptions> for UserStore {
 impl Handler<Connected> for UserStore {
     type Result = ();
 
-    /// creates new User struct with info from the Sock
+    /// creates new User struct with info from the SocketSession (user

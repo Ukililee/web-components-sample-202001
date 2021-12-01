@@ -73,4 +73,5 @@ impl Handler<Connected> for UserStore {
     type Result = ();
 
     /// creates new User struct with info from the SocketSession (user_id, Addr<SocketSession>)
-    fn handle(&mut self, msg: Connected, _ctx: &mut Self::Context) ->
+    fn handle(&mut self, msg: Connected, _ctx: &mut Self::Context) -> Self::Result {
+  

@@ -74,4 +74,5 @@ impl Handler<Connected> for UserStore {
 
     /// creates new User struct with info from the SocketSession (user_id, Addr<SocketSession>)
     fn handle(&mut self, msg: Connected, _ctx: &mut Self::Context) -> Self::Result {
-        let user = User::new(msg.user_id, msg.addr
+        let user = User::new(msg.user_id, msg.addr);
+        self.

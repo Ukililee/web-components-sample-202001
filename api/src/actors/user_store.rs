@@ -79,4 +79,4 @@ impl Handler<Connected> for UserStore {
     }
 }
 
-pub(cra
+pub(crate) struct Us

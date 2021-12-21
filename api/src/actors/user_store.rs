@@ -76,3 +76,7 @@ impl Handler<Connected> for UserStore {
     fn handle(&mut self, msg: Connected, _ctx: &mut Self::Context) -> Self::Result {
         let user = User::new(msg.user_id, msg.addr);
         self.users.insert(user.id, user);
+    }
+}
+
+pub(cra

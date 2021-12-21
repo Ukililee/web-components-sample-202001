@@ -79,4 +79,5 @@ impl Handler<Connected> for UserStore {
     }
 }
 
-pub(crate) struct Us
+pub(crate) struct User {
+    cr

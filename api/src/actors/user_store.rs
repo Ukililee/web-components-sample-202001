@@ -81,4 +81,4 @@ impl Handler<Connected> for UserStore {
 
 pub(crate) struct User {
     credits: u32,
-    addr: Addr
+    addr: Addr<SocketSession>,

@@ -80,4 +80,4 @@ impl Handler<Connected> for UserStore {
 }
 
 pub(crate) struct User {
-    cr
+    credits: u32,

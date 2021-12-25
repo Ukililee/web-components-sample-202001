@@ -83,4 +83,7 @@ pub(crate) struct User {
     credits: u32,
     addr: Addr<SocketSession>,
     id: usize,
-    subscriptions: Vec<String>
+    subscriptions: Vec<String>,
+}
+
+impl User {

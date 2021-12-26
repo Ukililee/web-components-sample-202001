@@ -87,3 +87,4 @@ pub(crate) struct User {
 }
 
 impl User {
+    fn new(id: usize, ad

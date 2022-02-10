@@ -90,4 +90,5 @@ impl User {
     fn new(id: usize, addr: Addr<SocketSession>) -> Self {
         Self {
             credits: USER_CREDITS,
-           
+            addr,
+      

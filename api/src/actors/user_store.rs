@@ -91,4 +91,5 @@ impl User {
         Self {
             credits: USER_CREDITS,
             addr,
-      
+            id,
+     

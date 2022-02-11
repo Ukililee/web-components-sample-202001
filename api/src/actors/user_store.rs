@@ -92,4 +92,4 @@ impl User {
             credits: USER_CREDITS,
             addr,
             id,
-     
+            subscrip

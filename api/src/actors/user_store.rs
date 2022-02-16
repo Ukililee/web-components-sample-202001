@@ -92,4 +92,6 @@ impl User {
             credits: USER_CREDITS,
             addr,
             id,
-            subscriptions: vec
+            subscriptions: vec![],
+        }
+  

@@ -94,4 +94,5 @@ impl User {
             id,
             subscriptions: vec![],
         }
-  
+    }
+}

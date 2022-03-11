@@ -24,3 +24,16 @@ async fn main() -> std::io::Result<()> {
 
     let user_store: Addr<UserStore> = UserStore {
         users: HashMap::new(),
+        stock_data_sink: app_state.stock_data.clone(),
+    }
+    .start();
+
+    let stock_engine: Addr<StockEngine> = StockEngine {
+        stock_data_sink: app_state.stock_data.clone(),
+        user_store: user_store.clone(),
+    }
+    .start();
+
+    // Create Http server with websocket support
+    HttpServer::new(move || {
+        App::new()

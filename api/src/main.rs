@@ -37,3 +37,21 @@ async fn main() -> std::io::Result<()> {
     // Create Http server with websocket support
     HttpServer::new(move || {
         App::new()
+            .app_data(app_state.clone())
+            .data(stock_engine.clone())
+            .data(user_store.clone())
+            .route("/summary", web::get().to(get_summary))
+            .service(web::resource("/ws/").to(handle_subscribe))
+    })
+    .bind(address)?
+    .run()
+    .await
+}
+
+async fn get_summary(state: Data<AppState>, query: web::Query<StockQuery>) -> HttpResponse {
+    let stock_data = state.stock_data.read().unwrap();
+    let mut result = vec![];
+
+    let summaries = stock_data.get_summaries();
+
+    for stock in query.stocks.split(",") {

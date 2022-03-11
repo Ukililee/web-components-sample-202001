@@ -78,3 +78,27 @@ async fn handle_subscribe(
         addr: srv.get_ref().clone(),
         user_id: rand::random(),
     };
+
+    ws::start(socket_session, &req, stream)
+}
+
+#[derive(Deserialize, Serialize, Debug)]
+pub struct StockQuery {
+    stocks: String,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct SummaryResponse {
+    stock: String,
+    summary: StockSummary,
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use actix_web::dev::{Service, ServiceResponse};
+    use actix_web::{http, test, web, App};
+    use std::sync::{Arc, RwLock};
+    use stock::{StockData, StockTrend};
+
+    #[actix_rt::test]

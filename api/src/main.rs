@@ -55,3 +55,26 @@ async fn get_summary(state: Data<AppState>, query: web::Query<StockQuery>) -> Ht
     let summaries = stock_data.get_summaries();
 
     for stock in query.stocks.split(",") {
+        if let Some(summary) = summaries.get(stock) {
+            if summary.is_some() {
+                result.push(SummaryResponse {
+                    stock: stock.into(),
+                    summary: summary.clone().unwrap(),
+                });
+            }
+        }
+    }
+
+    HttpResponse::Ok().json(result)
+}
+
+/// Entry point for our websocket route
+async fn handle_subscribe(
+    req: HttpRequest,
+    stream: web::Payload,
+    srv: web::Data<Addr<UserStore>>,
+) -> Result<HttpResponse, Error> {
+    let socket_session = SocketSession {
+        addr: srv.get_ref().clone(),
+        user_id: rand::random(),
+    };

@@ -102,3 +102,14 @@ mod tests {
     use stock::{StockData, StockTrend};
 
     #[actix_rt::test]
+    async fn test_get_summary() {
+        let mut stock_data = StockData::initialize();
+        let mut thread_rng = rand::thread_rng();
+        stock_data.generate_next_tick(&mut thread_rng);
+
+        let app_state = Data::new(AppState {
+            stock_data: Arc::new(RwLock::new(stock_data)),
+        });
+
+        let app = App::new()
+            .app_data(app_state.clone())

@@ -113,3 +113,15 @@ mod tests {
 
         let app = App::new()
             .app_data(app_state.clone())
+            .route("/summary", web::get().to(get_summary));
+
+        let mut app = test::init_service(app).await;
+        let req = test::TestRequest::get().uri("/summary").to_request();
+        let resp: ServiceResponse = app.call(req).await.unwrap();
+        assert_eq!(resp.status(), http::StatusCode::BAD_REQUEST);
+
+        let req = test::TestRequest::get()
+            .uri("/summary?stocks=APPL,GOOG")
+            .to_request();
+        let resp: ServiceResponse = app.call(req).await.unwrap();
+        assert_eq!(resp.status(), http::StatusCode::OK);

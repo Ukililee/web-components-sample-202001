@@ -125,3 +125,19 @@ mod tests {
             .to_request();
         let resp: ServiceResponse = app.call(req).await.unwrap();
         assert_eq!(resp.status(), http::StatusCode::OK);
+
+        let req = test::TestRequest::get()
+            .uri("/summary?stocks=APPL,GOOG")
+            .to_request();
+        let sum_resp: Vec<SummaryResponse> = test::read_response_json(&mut app, req).await;
+
+        assert_eq!(sum_resp.len(), 2);
+
+        let apple_summary = sum_resp.first().unwrap();
+        assert_eq!(apple_summary.stock, "APPL");
+        assert!(apple_summary.summary.highest_price.is_some());
+        assert!(apple_summary.summary.lowest_price.is_some());
+        assert!(apple_summary.summary.moving_average > 0.0);
+        assert_eq!(apple_summary.summary.trend, StockTrend::NotEnoughData);
+    }
+}

@@ -4,4 +4,6 @@ use crate::actors::socket_session::SocketSession;
 
 #[derive(Message)]
 #[rtype(result = "()")]
-pub(crate) struct StockU
+pub(crate) struct StockUpdated;
+
+#[deri

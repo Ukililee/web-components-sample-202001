@@ -9,4 +9,4 @@ pub(crate) struct StockUpdated;
 #[derive(Message)]
 #[rtype(result = "()")]
 pub(crate) struct Connected {
-    pub 
+    pub addr: Addr<SocketS

@@ -8,4 +8,4 @@ pub(crate) struct StockUpdated;
 
 #[derive(Message)]
 #[rtype(result = "()")]
-pub(crat
+pub(crate) struct Connect

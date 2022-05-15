@@ -13,4 +13,5 @@ pub(crate) struct Connected {
     pub user_id: usize,
 }
 
-#[derive(Message)
+#[derive(Message)]
+#[rtype(result

@@ -10,4 +10,7 @@ pub(crate) struct StockUpdated;
 #[rtype(result = "()")]
 pub(crate) struct Connected {
     pub addr: Addr<SocketSession>,
-    pub user_id: usiz
+    pub user_id: usize,
+}
+
+#[

@@ -14,4 +14,5 @@ pub(crate) struct Connected {
 }
 
 #[derive(Message)]
-#[rtype(result
+#[rtype(result = "()")]
+pub(cr

@@ -15,4 +15,4 @@ pub(crate) struct Connected {
 
 #[derive(Message)]
 #[rtype(result = "()")]
-pub(cr
+pub(crate) struct Sen

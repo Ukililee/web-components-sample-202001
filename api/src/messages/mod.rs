@@ -16,4 +16,5 @@ pub(crate) struct Connected {
 #[derive(Message)]
 #[rtype(result = "()")]
 pub(crate) struct SendClientMessage {
-    pub 
+    pub message: String,
+}

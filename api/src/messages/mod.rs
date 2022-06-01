@@ -18,3 +18,5 @@ pub(crate) struct Connected {
 pub(crate) struct SendClientMessage {
     pub message: String,
 }
+
+#[derive(Mess

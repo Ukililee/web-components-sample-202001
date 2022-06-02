@@ -19,4 +19,5 @@ pub(crate) struct SendClientMessage {
     pub message: String,
 }
 
-#[derive(Mess
+#[derive(Message)]
+#[rtype(r

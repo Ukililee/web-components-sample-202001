@@ -21,4 +21,4 @@ pub(crate) struct SendClientMessage {
 
 #[derive(Message)]
 #[rtype(result = "()")]
-p
+pub(crate) struct

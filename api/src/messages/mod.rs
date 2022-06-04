@@ -21,4 +21,4 @@ pub(crate) struct SendClientMessage {
 
 #[derive(Message)]
 #[rtype(result = "()")]
-pub(crate) struct
+pub(crate) struct UpdateUserSu

@@ -22,4 +22,5 @@ pub(crate) struct SendClientMessage {
 #[derive(Message)]
 #[rtype(result = "()")]
 pub(crate) struct UpdateUserSubscriptions {
-    pub subscriptions: Ve
+    pub subscriptions: Vec<String>,
+  

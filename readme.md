@@ -1,3 +1,5 @@
 # Stock Ticker Service
 
-### What 
+### What is it?
+
+A

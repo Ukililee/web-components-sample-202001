@@ -1,1 +1,3 @@
-# Stock Ticke
+# Stock Ticker Service
+
+### What 

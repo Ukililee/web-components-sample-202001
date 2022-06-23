@@ -2,4 +2,4 @@
 
 ### What is it?
 
-An HTTP/TCP
+An HTTP/TCP stock quer

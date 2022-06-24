@@ -2,4 +2,4 @@
 
 ### What is it?
 
-An HTTP/TCP stock querying service where users can query o
+An HTTP/TCP stock querying service where users can query or subscribe to 1 or

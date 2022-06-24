@@ -2,4 +2,4 @@
 
 ### What is it?
 
-An HTTP/TCP stock quer
+An HTTP/TCP stock querying service where u

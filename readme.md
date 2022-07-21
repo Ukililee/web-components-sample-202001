@@ -11,4 +11,6 @@ Main point of this repo is showcase of using Actix with Actor Models to build Ru
 # Instructions
 
 ```shell
-$ cargo
+$ cargo build
+$ cargo run
+``

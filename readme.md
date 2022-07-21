@@ -9,3 +9,6 @@ Authentication is not done, also stock values are randomly generated.
 Main point of this repo is showcase of using Actix with Actor Models to build Rust Concurrent Servers.
 
 # Instructions
+
+```shell
+$ cargo

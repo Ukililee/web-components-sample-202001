@@ -16,3 +16,5 @@ $ cargo run
 ```
 
 ### Get Summary
+
+Make a GET requ

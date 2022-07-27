@@ -20,3 +20,4 @@ $ cargo run
 Make a GET request to
 
 ```
+http://127.0.0.1

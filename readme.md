@@ -23,4 +23,4 @@ Make a GET request to
 http://127.0.0.1:3000/summary?stocks=APPL,GOOG
 ```
 
-### Connec
+### Connect via websocket

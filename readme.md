@@ -25,4 +25,4 @@ http://127.0.0.1:3000/summary?stocks=APPL,GOOG
 
 ### Connect via websocket
 
-- open static/webso
+- open static/websocket.html in your

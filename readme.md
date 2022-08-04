@@ -27,4 +27,4 @@ http://127.0.0.1:3000/summary?stocks=APPL,GOOG
 
 - open static/websocket.html in your browser
 - click "Connect" button
-- send me
+- send messages in this 

@@ -29,3 +29,24 @@
           log('Connecting...')
 
           conn.onopen = function () {
+            log('Connected.')
+            update_ui()
+          }
+
+          conn.onmessage = function (e) {
+            log('Received: ' + e.data)
+          }
+
+          conn.onclose = function () {
+            log('Disconnected.')
+            conn = null
+
+            update_ui()
+          }
+        }
+
+        const disconnect = () => {
+          if (conn) {
+            log('Disconnecting...')
+            conn.close()
+            conn = null

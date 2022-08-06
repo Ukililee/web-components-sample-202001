@@ -50,3 +50,22 @@
             log('Disconnecting...')
             conn.close()
             conn = null
+
+            update_ui()
+          }
+        }
+
+        const update_ui = () => {
+          if (!conn) {
+            span_status.textContent = 'disconnected'
+            btn_connect.textContent = 'Connect'
+          } else {
+            span_status.textContent = `connected (${conn.protocol})`
+            btn_connect.textContent = 'Disconnect'
+          }
+        }
+
+        btn_connect.onclick = () => {
+          console.log("clicked the button")
+          if (!conn) {
+            connect()

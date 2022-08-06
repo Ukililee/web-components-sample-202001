@@ -11,3 +11,21 @@
 
       window.onload = () => {
         let conn = null
+
+        const log = (msg) => {
+          div_log.innerHTML += msg + '<br>'
+          div_log.scroll(0, div_log.scrollTop + 1000)
+        }
+
+        const connect = () => {
+          disconnect()
+
+          const wsUri =
+            (window.location.protocol === 'https:' ? 'wss://' : 'ws://') +
+            "127.0.0.1:3000" +
+            '/ws/'
+
+          conn = new WebSocket(wsUri)
+          log('Connecting...')
+
+          conn.onopen = function () {

@@ -69,3 +69,22 @@
           console.log("clicked the button")
           if (!conn) {
             connect()
+          } else {
+            disconnect()
+          }
+
+          update_ui()
+        }
+
+        btn_send.onclick = () => {
+          if (!conn) return
+
+          const text = input_text.value
+          log('Sending: ' + text)
+          conn.send(text)
+
+          input_text.value = ''
+          input_text.focus()
+        }
+
+        input_text.onkeyup = (e) => {

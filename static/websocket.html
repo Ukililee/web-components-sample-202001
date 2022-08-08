@@ -88,3 +88,20 @@
         }
 
         input_text.onkeyup = (e) => {
+          if (e.key === 'Enter') {
+            btn_send.click()
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>Chat!</h3>
+    <div>
+      <button id="btn_connect">Connect</button>
+      Status: <span id="span_status">disconnected</span>
+    </div>
+
+    <div
+      id="div_log"

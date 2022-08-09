@@ -1,3 +1,4 @@
 [package]
 edition = "2018"
-name = 
+name = "stock"
+version = "0

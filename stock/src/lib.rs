@@ -25,3 +25,21 @@ pub struct StockSummary {
 }
 
 /// Holds our stock data
+#[derive(Debug)]
+pub struct StockData {
+    lowest: HashMap<&'static str, Option<Price>>,
+    highest: HashMap<&'static str, Option<Price>>,
+    data: HashMap<&'static str, Vec<Price>>,
+    summaries: HashMap<&'static str, Option<StockSummary>>,
+}
+
+impl StockData {
+    pub fn initialize() -> Self {
+        let mut data = HashMap::new();
+        let mut highest = HashMap::new();
+        let mut lowest = HashMap::new();
+        let mut summaries = HashMap::new();
+
+        for stock in STOCKS {
+            data.insert(stock, vec![]);
+            lowest.insert(stock, None);

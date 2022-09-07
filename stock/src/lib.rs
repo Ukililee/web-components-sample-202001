@@ -59,3 +59,23 @@ impl StockData {
     pub fn generate_next_tick(&mut self, thread_rng: &mut ThreadRng) {
         let next_prices: [Price; STOCKS.len()] = thread_rng.gen();
         let mut iter = next_prices.iter().map(|v| v * 100f64);
+
+        for stock in STOCKS {
+            let next_price = iter.next().unwrap();
+            self.insert_next(stock, next_price);
+            self.insert_lowest(stock, next_price);
+            self.insert_highest(stock, next_price);
+
+            let stock_summary = self.get_summary(stock);
+            self.summaries.insert(stock, stock_summary);
+        }
+    }
+
+    /// get all sumarries
+    pub fn get_summaries(&self) -> &HashMap<&'static str, Option<StockSummary>> {
+        &self.summaries
+    }
+
+    /// get last recorded price for a stock
+    pub fn get_last_price(&self, stock: &str) -> Option<Price> {
+        if let Some(prices) = self.get_prices(stock) {

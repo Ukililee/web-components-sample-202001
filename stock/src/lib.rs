@@ -101,3 +101,20 @@ impl StockData {
             })
         } else {
             None
+        }
+    }
+
+    /// get history of all recorded prices for given stock
+    fn get_prices(&self, stock: &str) -> Option<&Vec<Price>> {
+        self.data.get(stock)
+    }
+
+    /// get lowest recorded price for a given stock
+    fn get_lowest_price(&self, stock: &str) -> Option<Price> {
+        *self.lowest.get(stock).unwrap_or(&None)
+    }
+
+    /// get highest recorded price for a given stock
+    fn get_highest_price(&self, stock: &str) -> Option<Price> {
+        *self.highest.get(stock).unwrap_or(&None)
+    }

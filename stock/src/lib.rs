@@ -134,3 +134,14 @@ impl StockData {
                     if price < *v {
                         self.lowest.insert(stock, Some(price));
                     }
+                }
+                None => {
+                    self.lowest.insert(stock, Some(price));
+                }
+            };
+        };
+    }
+
+    /// inserts new value for given stock if it's the highest ever recorded
+    fn insert_highest(&mut self, stock: &'static str, price: Price) {
+        if let Some(current_price) = self.highest.get(stock) {

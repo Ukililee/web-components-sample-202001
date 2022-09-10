@@ -118,3 +118,19 @@ impl StockData {
     fn get_highest_price(&self, stock: &str) -> Option<Price> {
         *self.highest.get(stock).unwrap_or(&None)
     }
+
+    /// inserts new value to the end of the vector of a given stock
+    fn insert_next(&mut self, stock: &'static str, price: Price) {
+        if let Some(current_prices) = self.data.get_mut(stock) {
+            current_prices.push(price);
+        }
+    }
+
+    /// inserts new value for given stock if it's the lowest ever recorded
+    fn insert_lowest(&mut self, stock: &'static str, price: Price) {
+        if let Some(current_price) = self.lowest.get(stock) {
+            match current_price {
+                Some(v) => {
+                    if price < *v {
+                        self.lowest.insert(stock, Some(price));
+                    }

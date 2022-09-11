@@ -191,3 +191,11 @@ mod tests {
         }
 
         assert_eq!(stock_data.data.get(stock).unwrap().len(), 102);
+
+        let lowest = stock_data.get_lowest_price(stock).unwrap();
+        let highest = stock_data.get_highest_price(stock).unwrap();
+
+        for price in stock_data.data.get(stock).unwrap() {
+            assert!(lowest <= *price);
+            assert!(highest >= *price);
+        }

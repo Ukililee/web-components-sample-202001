@@ -155,3 +155,24 @@ impl StockData {
                     self.highest.insert(stock, Some(price));
                 }
             };
+        };
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_stock_data() {
+        let mut stock_data = StockData::initialize();
+        let stock = "APPL";
+
+        let mut thread_rng = rand::thread_rng();
+
+        assert!(stock_data.data.contains_key(stock));
+        assert!(stock_data.get_lowest_price(stock).is_none());
+        assert!(stock_data.get_highest_price(stock).is_none());
+
+        // first tick happens
+        stock_data.generate_next_tick(&mut thread_rng);

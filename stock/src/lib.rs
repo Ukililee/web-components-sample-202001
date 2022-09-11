@@ -176,3 +176,18 @@ mod tests {
 
         // first tick happens
         stock_data.generate_next_tick(&mut thread_rng);
+
+        assert!(stock_data.get_lowest_price(stock).is_some());
+        assert!(stock_data.get_highest_price(stock).is_some());
+        assert_eq!(stock_data.data.get(stock).unwrap().len(), 1);
+
+        // second tick happens
+        stock_data.generate_next_tick(&mut thread_rng);
+        assert_eq!(stock_data.data.get(stock).unwrap().len(), 2);
+
+        // 100 more ticks happen
+        for _ in 0..100 {
+            stock_data.generate_next_tick(&mut thread_rng);
+        }
+
+        assert_eq!(stock_data.data.get(stock).unwrap().len(), 102);

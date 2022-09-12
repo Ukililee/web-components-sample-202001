@@ -199,3 +199,15 @@ mod tests {
             assert!(lowest <= *price);
             assert!(highest >= *price);
         }
+
+        let summary = stock_data.get_summary(stock);
+        assert!(summary.is_some());
+        let summary = summary.unwrap();
+
+        assert!(summary.highest_price.is_some());
+        assert!(summary.lowest_price.is_some());
+        assert_eq!(summary.highest_price.unwrap(), highest);
+        assert_eq!(summary.lowest_price.unwrap(), lowest);
+        assert!(summary.moving_average > 0.0);
+    }
+}

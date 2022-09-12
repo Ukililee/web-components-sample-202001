@@ -1,1 +1,3 @@
-use crate::{Price
+use crate::{Price, StockTrend};
+
+pu

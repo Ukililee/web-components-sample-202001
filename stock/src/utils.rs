@@ -1,3 +1,3 @@
 use crate::{Price, StockTrend};
 
-pu
+pub(crate) fn get_trend(pr

@@ -6,4 +6,4 @@ pub(crate) fn get_trend(prices: &Vec<Price>) -> StockTrend {
     if size <= 1000 {
         StockTrend::NotEnoughData
     } else {
-        let 
+        let start_index = 

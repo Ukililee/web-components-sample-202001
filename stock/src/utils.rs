@@ -11,4 +11,4 @@ pub(crate) fn get_trend(prices: &Vec<Price>) -> StockTrend {
         let high_mid_index = low_mid_index + 250;
         let end_index = high_mid_index + 500;
 
-        if prices[st
+        if prices[start_index] <=

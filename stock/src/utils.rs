@@ -15,3 +15,4 @@ pub(crate) fn get_trend(prices: &Vec<Price>) -> StockTrend {
             && prices[high_mid_index] <= prices[end_index]
         {
             StockTrend::Uptrend
+        } 

@@ -20,4 +20,4 @@ pub(crate) fn get_trend(prices: &Vec<Price>) -> StockTrend {
         {
             StockTrend::Downtrend
         } else {
-            St
+            StockTrend::Sidewa

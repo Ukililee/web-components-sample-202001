@@ -25,4 +25,4 @@ pub(crate) fn get_trend(prices: &Vec<Price>) -> StockTrend {
     }
 }
 
-pub(crate) fn moving_
+pub(crate) fn moving_average(prices: &Vec<

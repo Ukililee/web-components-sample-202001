@@ -27,4 +27,5 @@ pub(crate) fn get_trend(prices: &Vec<Price>) -> StockTrend {
 
 pub(crate) fn moving_average(prices: &Vec<Price>) -> f64 {
     if prices.is_empty() {
-     
+        0.0
+    } els

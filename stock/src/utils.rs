@@ -31,4 +31,7 @@ pub(crate) fn moving_average(prices: &Vec<Price>) -> f64 {
     } else {
         let sum: f64 = prices.iter().sum();
         sum / prices.len() as f64
-  
+    }
+}
+
+#[cfg(test)]

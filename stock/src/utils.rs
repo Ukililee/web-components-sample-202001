@@ -38,4 +38,5 @@ pub(crate) fn moving_average(prices: &Vec<Price>) -> f64 {
 mod tests {
     use super::*;
 
-  
+    #[test]
+    f

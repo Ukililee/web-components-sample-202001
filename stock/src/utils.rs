@@ -39,4 +39,4 @@ mod tests {
     use super::*;
 
     #[test]
-    f
+    fn test_moving_av

@@ -39,4 +39,5 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_moving_av
+    fn test_moving_average() {
+        l

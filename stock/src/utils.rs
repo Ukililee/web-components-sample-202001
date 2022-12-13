@@ -40,4 +40,4 @@ mod tests {
 
     #[test]
     fn test_moving_average() {
-        l
+        let no_prices = 

@@ -41,4 +41,4 @@ mod tests {
     #[test]
     fn test_moving_average() {
         let no_prices = vec![];
-        asse
+        assert_eq!(moving_avera

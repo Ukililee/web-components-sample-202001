@@ -43,3 +43,4 @@ mod tests {
         let no_prices = vec![];
         assert_eq!(moving_average(&no_prices), 0.0);
 
+        let pr

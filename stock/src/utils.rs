@@ -43,4 +43,5 @@ mod tests {
         let no_prices = vec![];
         assert_eq!(moving_average(&no_prices), 0.0);
 
-        let prices = vec![1., 
+        let prices = vec![1., 2., 3., 4., 5., 6.];
+  

@@ -44,4 +44,6 @@ mod tests {
         assert_eq!(moving_average(&no_prices), 0.0);
 
         let prices = vec![1., 2., 3., 4., 5., 6.];
-        assert_eq!(moving_average(&p
+        assert_eq!(moving_average(&prices), 3.5);
+    }
+

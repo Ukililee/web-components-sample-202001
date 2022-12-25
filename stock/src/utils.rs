@@ -48,4 +48,4 @@ mod tests {
     }
 
     #[test]
-    fn te
+    fn test_get_trend() {

@@ -49,3 +49,4 @@ mod tests {
 
     #[test]
     fn test_get_trend() {
+        let small_

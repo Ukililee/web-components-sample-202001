@@ -47,3 +47,5 @@ mod tests {
         assert_eq!(moving_average(&prices), 3.5);
     }
 
+    #[test]
+    fn te

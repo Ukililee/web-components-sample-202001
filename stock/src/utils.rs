@@ -50,4 +50,4 @@ mod tests {
     #[test]
     fn test_get_trend() {
         let small_data_set = vec![1., 2., 3., 4., 5., 6.];
-        a
+        assert_eq!(get

@@ -52,4 +52,4 @@ mod tests {
         let small_data_set = vec![1., 2., 3., 4., 5., 6.];
         assert_eq!(get_trend(&small_data_set), StockTrend::NotEnoughData);
 
-        let large_
+        let large_uptrend_data_set: V

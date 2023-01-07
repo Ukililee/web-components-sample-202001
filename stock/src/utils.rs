@@ -53,4 +53,4 @@ mod tests {
         assert_eq!(get_trend(&small_data_set), StockTrend::NotEnoughData);
 
         let large_uptrend_data_set: Vec<f64> = (0..1001).into_iter().map(|v| v as f64).collect();
-        assert_eq!(get_trend(&large_uptrend_data_set), StockT
+        assert_eq!(get_trend(&large_uptrend_data_set), StockTrend::Uptrend);

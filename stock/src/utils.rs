@@ -62,4 +62,4 @@ mod tests {
             (0..1001).into_iter().map(|v| v as f64).rev().collect();
         assert_eq!(get_trend(&large_downtrend_data_set), StockTrend::Downtrend);
 
-        let large_dow
+        let large_downtrend_data_set: Vec<f6

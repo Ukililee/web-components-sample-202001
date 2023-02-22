@@ -64,4 +64,4 @@ mod tests {
 
         let large_downtrend_data_set: Vec<f64> =
             (0..1451).into_iter().map(|v| v as f64).rev().collect();
-        assert_eq!(get_trend(&large
+        assert_eq!(get_trend(&large_downtrend_data_se
